@@ -4,173 +4,46 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Patrícia Torres</title>
-<style>
-
-  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap');
-
-  :root{
-    --bg: #FAF9F6;
-    --ink: #2B2E33;
-    --ink-soft: #6B6F76;
-    --accent: #5C7C73;
-    --line: #E2DFD8;
-  }
-
-  *{ box-sizing: border-box; }
-
-  body{
-    margin: 0;
-    background: var(--bg);
-    color: var(--ink);
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    line-height: 1.7;
-  }
-
-  .wrap{
-    max-width: 620px;
-    margin: 0 auto;
-    padding: 100px 24px 80px;
-  }
-
-  .eyebrow{
-    font-size: 13px;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 18px;
-  }
-
-  h1{
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 600;
-    font-size: 56px;
-    margin: 0 0 8px;
-    color: var(--ink);
-  }
-
-  .tagline{
-    font-size: 18px;
-    color: var(--ink-soft);
-    margin: 0 0 48px;
-    font-weight: 400;
-  }
-
-  hr{
-    border: none;
-    border-top: 1px solid var(--line);
-    margin: 48px 0;
-  }
-
-  h2{
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 26px;
-    font-weight: 600;
-    margin: 0 0 18px;
-  }
-
-  p{
-    font-size: 16px;
-    color: var(--ink);
-    margin: 0 0 16px;
-  }
-
-  .links{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 14px;
-    margin-top: 8px;
-  }
-
-  .links a{
-    color: var(--ink);
-    text-decoration: none;
-    font-size: 15px;
-    padding-bottom: 2px;
-    border-bottom: 1px solid var(--accent);
-    transition: opacity 0.2s ease;
-  }
-
-  .links a:hover{
-    opacity: 0.6;
-  }
-
-  footer{
-    margin-top: 80px;
-    font-size: 13px;
-    color: var(--ink-soft);
-  }
-
-  @media (max-width: 480px){
-    h1{ font-size: 42px; }
-    .wrap{ padding: 70px 20px 60px; }
-  }
-
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="wrap">
+  <nav class="topnav">
+    <a href="index.html" class="active">Início</a>
+    <a href="trabalho.html">Trabalho</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
 
-    <!-- ====== Aqui podes mudar o teu nome ====== -->
-    <p class="eyebrow">Bem-vindo(a) à minha página</p>
-    <h1>Patrícia Torres</h1>
-    <p class="tagline">A escrever uma tese sobre representação política feminina.</p>
+  <div class="layout">
 
-    <hr>
-
-    <!-- ====== Aqui podes escrever sobre ti ====== -->
-    <h2>Sobre mim</h2>
-    <p>
-      Ex-jornalista, ex-copywriter e futura cientista política. 
-      
-    </p>
-
-    <hr><h2>Blogue</h2>
-
-<p style="font-size: 13px; color: #6B6F76; margin-bottom: 4px;">16 de junho de 2026</p>
-<h2 style="font-size: 20px;">O que é representar?</h2>
-<p>
-  Hanna Pitkin é uma das mais citadas e reconhecidas teóricas políticas pelo seu trabalho sobre o conceito de "representação".
-  Para a autora, saber o significado de "representação" e aprender a "representar" são processos que estão intimamente ligados. 
-  O conceito de representação é comumente associado à concepção de democracia que, por sua vez, remete para as ideias de liberdade e justiça.
-  No entanto, como sublinha Pitkin, ao longo da história, tanto o conceito como a prática da representação têm tido pouco a ver quer com o sentido
-  político de liberdade, quer com o próprio conceito de democracia. Basta pensar no regime monárquico, em que o rei herdeiro por "via natural" é o legítimo 
-  representante da nação e do povo. 
-  Em, The Concept of Representation, Pitkin expõe a essência controversa do seu objeto de investigação:
-  «Hobbes sugere que o representante é livre de fazer o que bem entender (pelo menos no que diz respeito aos seus eleitores). 
-  A maioria dos teóricos defende que o representante deve fazer o que é melhor para aqueles que estão sob a sua responsabilidade, mas que deve fazer o 
-  que acha melhor, usando o seu próprio julgamento e sabedoria, uma vez que foi escolhido para tomar decisões em nome dos (i.e., em vez dos) 
-  dos seus eleitores. Mas uma minoria expressiva sustenta que o dever do representante é refletir com precisão os desejos e as 
-  opiniões daqueles que representa. Tudo o resto é considerado uma afronta à verdadeira representação. A verdade pode estar algures no meio, 
-  mas, se estiver, onde se encontra e como decidir?» (Pitkin, 1967, p.4) 
-  O trabalho de Pitkin permitiu-nos, assim, distinguir três tipos de representação,designadamente, descritiva, substantiva e simbólica. 
-  É especialmente a partir do conceito de representação substantiva, ou seja, agir no interesse
-  dos representados de maneira a (cor)responder aos seus interesses, que se torna possível aferir a qualidade da representação. Esta perspetiva, todavia,
-  tem sido alvo de críticas, na medida em que a volatilidade eleitoral e o desalinhamento entre os partidos e os seus eleitores podem constituir um
-  obstáculo à capacidade dos representantes para defender e representar os verdadeiros interesses dos cidadãos que representam. Aquilo a que na
-  ciência política se chama de "responsividade", ou seja a capacidade da classe política para responder aos interesses dos seus eleitores, 
-  torna-se deste modo um indicador do grau de qualidade da democracia representativa. 
-  É neste sentido que se afirma a ideia de que a presença das mulheres nas instituições políticas aumenta a possibilidade de as questões e interesses das mulheres
-  poderem ser representados de forma substancial. Isto é, quando no parlamento a representação feminina constitui aquilo que a literatura denomina
-  "massa crítica", capaz de fazer a diferença nas políticas, ao ter em conta a experiências de vida específicas das mulheres na tomda de decisão (Celis, 2013, p.180).
-  
-</p>
-
-    <!-- ====== Aqui podes pôr os teus contactos ou redes sociais ====== -->
-    <h2>Contacto</h2>
-    <p>A forma mais fácil de me contactar:</p>
-    <div class="links">
-      <a href="mailto:p.dosreistorres@gmail.com">Email</a>
-      <a href="https://instagram.com/oteuperfil">Instagram</a>
-      <a href="https://linkedin.com/in/oteuperfil">LinkedIn</a>
+    <div class="sidebar">
+      <h1>Patrícia Torres</h1>
+      <p class="tagline">Doutoranda em Ciência Política</p>
+      <div class="links">
+        <a href="mailto:oteuemail@exemplo.com">Email</a>
+        <a href="https://linkedin.com/in/oteuperfil">LinkedIn</a>
+      </div>
     </div>
 
-    <footer>
-      © 2026 Patrícia Torres
-    </footer>
+    <div class="content">
+      <p class="eyebrow">Bem-vindo(a)</p>
+      <h2>Olá, sou a Patrícia</h2>
+      <p>
+        Sou doutoranda em Ciência Política, a desenvolver uma tese sobre
+        representação política feminina. O meu trabalho explora como as
+        mulheres são (ou não são) representadas nas instituições políticas,
+        e o que isso significa para a qualidade da democracia.
+      </p>
+      <p>
+        Nesta página partilho um pouco do meu percurso e investigação.
+        Sente-te à vontade para explorar a secção "Trabalho" para saber
+        mais, ou contactar-me através da página "Contacto".
+      </p>
+    </div>
 
   </div>
+
+  <footer>© 2026 Patrícia Torres</footer>
 
 </body>
 </html>
