@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patrícia Torres</title>
+<style>
+
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap');
+
+  :root{
+    --bg: #FAF9F6;
+    --ink: #2B2E33;
+    --ink-soft: #6B6F76;
+    --accent: #5C7C73;
+    --line: #E2DFD8;
+  }
+
+  *{ box-sizing: border-box; }
+
+  body{
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+  }
+
+  .wrap{
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 100px 24px 80px;
+  }
+
+  .eyebrow{
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 18px;
+  }
+
+  h1{
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-size: 56px;
+    margin: 0 0 8px;
+    color: var(--ink);
+  }
+
+  .tagline{
+    font-size: 18px;
+    color: var(--ink-soft);
+    margin: 0 0 48px;
+    font-weight: 400;
+  }
+
+  hr{
+    border: none;
+    border-top: 1px solid var(--line);
+    margin: 48px 0;
+  }
+
+  h2{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0 0 18px;
+  }
+
+  p{
+    font-size: 16px;
+    color: var(--ink);
+    margin: 0 0 16px;
+  }
+
+  .links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 8px;
+  }
+
+  .links a{
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 15px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid var(--accent);
+    transition: opacity 0.2s ease;
+  }
+
+  .links a:hover{
+    opacity: 0.6;
+  }
+
+  footer{
+    margin-top: 80px;
+    font-size: 13px;
+    color: var(--ink-soft);
+  }
+
+  @media (max-width: 480px){
+    h1{ font-size: 42px; }
+    .wrap{ padding: 70px 20px 60px; }
+  }
+
+</style>
+</head>
+<body>
+
+  <div class="wrap">
+
+    <!-- ====== Aqui podes mudar o teu nome ====== -->
+    <p class="eyebrow">Bem-vindo(a) à minha página</p>
+    <h1>Patrícia Torres</h1>
+    <p class="tagline">Escreve aqui uma frase curta sobre ti, por exemplo a tua profissão ou um interesse.</p>
+
+    <hr>
+
+    <!-- ====== Aqui podes escrever sobre ti ====== -->
+    <h2>Sobre mim</h2>
+    <p>
+      Este é o espaço para falares um pouco sobre ti. Podes contar quem és,
+      o que gostas de fazer, ou o que te trouxe até aqui. Não precisa de
+      ser longo — só o suficiente para as pessoas te conhecerem um pouco melhor.
+    </p>
+
+    <hr>
+
+    <!-- ====== Aqui podes pôr os teus contactos ou redes sociais ====== -->
+    <h2>Contacto</h2>
+    <p>A forma mais fácil de me contactar:</p>
+    <div class="links">
+      <a href="mailto:oteuemail@exemplo.com">Email</a>
+      <a href="https://instagram.com/oteuperfil">Instagram</a>
+      <a href="https://linkedin.com/in/oteuperfil">LinkedIn</a>
+    </div>
+
+    <footer>
+      © 2026 Patrícia Torres
+    </footer>
+
+  </div>
+
+</body>
+</html>
