@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap');
+
+:root{
+  --bg: #FAF9F6;
+  --ink: #2B2E33;
+  --ink-soft: #6B6F76;
+  --accent: #5C7C73;
+  --line: #E2DFD8;
+}
+
+*{ box-sizing: border-box; }
+
+body{
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+nav.topnav{
+  display: flex;
+  gap: 32px;
+  padding: 28px 40px;
+  border-bottom: 1px solid var(--line);
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+nav.topnav a{
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+nav.topnav a.active,
+nav.topnav a:hover{
+  border-bottom-color: var(--accent);
+}
+
+.layout{
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 60px 40px 100px;
+  display: flex;
+  gap: 64px;
+}
+
+.sidebar{
+  width: 220px;
+  flex-shrink: 0;
+}
+
+.sidebar h1{
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 30px;
+  margin: 0 0 6px;
+}
+
+.sidebar .tagline{
+  font-size: 14px;
+  color: var(--ink-soft);
+  margin: 0 0 24px;
+}
+
+.sidebar .links{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar .links a{
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 14px;
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 2px;
+  width: fit-content;
+  transition: opacity 0.2s ease;
+}
+
+.sidebar .links a:hover{
+  opacity: 0.6;
+}
+
+.content{
+  flex: 1;
+  min-width: 0;
+}
+
+.content .eyebrow{
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.content h2{
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 38px;
+  margin: 0 0 24px;
+}
+
+.content p{
+  font-size: 16px;
+  margin: 0 0 16px;
+}
+
+footer{
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0 40px 60px;
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 640px){
+  .layout{ flex-direction: column; gap: 40px; padding: 40px 24px 80px; }
+  nav.topnav{ padding: 24px 24px; flex-wrap: wrap; gap: 20px; }
+  .sidebar{ width: 100%; }
+  .content h2{ font-size: 30px; }
+}
