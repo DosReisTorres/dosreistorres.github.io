@@ -115,7 +115,36 @@ nav.topnav a:hover{
   margin: 0 0 16px;
 }
 
-footer{
+ .content h3{
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 24px;
+  margin: 40px 0 20px;
+}
+
+.pub-item{
+  margin-bottom: 22px;
+  padding-left: 16px;
+  border-left: 2px solid var(--line);
+}
+
+.pub-item .pub-title{
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 2px;
+}
+
+.pub-item .pub-venue{
+  font-size: 14px;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+.pub-item a{
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
+}footer{
   max-width: 920px;
   margin: 0 auto;
   padding: 0 40px 60px;
